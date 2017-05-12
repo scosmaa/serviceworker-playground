@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+    Aprire la console
+    <script>
+        navigator.serviceWorker.register('service-worker.js', {
+        scope: '.'
+        }).then(function(registration) {
+            // The service worker has been registered!
+        });
+    </script>
+    <script src="js/online-checker.js"></script>
+    </body>
+</html>
